@@ -10,5 +10,9 @@ def status():
 def tickets():
     return {'tickets': []}
 
+@app.route('/sobre')
+def sobre():
+    return {'nome': 'OpsTrack API'}
+
 if __name__ == "__main__":
     app.run(debug=True)
