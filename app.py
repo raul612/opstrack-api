@@ -6,5 +6,9 @@ app = Flask(__name__)
 def status():
     return {'servico': 'OpsTrackAPI', 'status': 'online'}
 
+@app.route('/tickets')
+def tickets():
+    return {'tickets': []}
+
 if __name__ == "__main__":
     app.run(debug=True)
