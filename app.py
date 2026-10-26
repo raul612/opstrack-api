@@ -1,10 +1,13 @@
+
 from flask import Flask
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def status():
     return {'servico': 'OpsTrack API', 'status': 'online'}
+
 
 @app.route('/status')
 def health_check():
